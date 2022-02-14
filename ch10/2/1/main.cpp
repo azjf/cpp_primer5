@@ -44,7 +44,8 @@ int main()
     std::replace_copy(ilst.begin(), ilst.end(),
             std::back_inserter(ivec), 0, 42);
 
-    std::vector<std::string> words{"the quick red fox jumps over the slow red turtle"};
+    std::vector<std::string> words{"the", "quick", "red", "fox",
+        "jumps", "over", "the", "slow", "red", "turtle"};
     elimDups(words);
     return 0;
 }
