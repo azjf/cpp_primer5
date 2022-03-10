@@ -4,7 +4,7 @@ all: a.out
 	./a.out infile out_odd out_even
 
 a.out: *.cpp
-	$(CPP) $^ -o $@ -Wall
+	$(CPP) $^ -o $@ -Wall -g
 
 clean:
 	rm a.out

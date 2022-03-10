@@ -4,7 +4,7 @@ all: a.out
 	./a.out argv1 argv2
 
 a.out: *.cpp
-	$(CPP) $^ -o $@ -Wall
+	$(CPP) $^ -o $@ -Wall -g
 
 clean:
 	rm a.out

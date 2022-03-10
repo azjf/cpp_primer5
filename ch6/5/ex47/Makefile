@@ -4,10 +4,10 @@ all: a.out
 	./a.out
 
 a.out: *.cpp
-	$(CPP) $^ -o $@ -Wall
+	$(CPP) $^ -o $@ -Wall -g
 
 release.out: *.cpp
-	$(CPP) $^ -D NDEBUG -o $@ -Wall
+	$(CPP) $^ -D NDEBUG -o $@ -Wall -g
 	./release.out
 
 clean:

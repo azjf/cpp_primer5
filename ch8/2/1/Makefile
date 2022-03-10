@@ -4,7 +4,7 @@ all: a.out
 	./a.out ifile1 ifile2
 
 a.out: *.cpp
-	$(CPP) $^ -o $@ -Wall
+	$(CPP) $^ -o $@ -Wall -g
 
 clean:
 	rm a.out
